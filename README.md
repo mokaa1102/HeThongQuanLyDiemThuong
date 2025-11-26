@@ -2,16 +2,16 @@
 - Tên dự án: Hệ thống quản lý điểm thưởng
 - Phân công thành viên:
 
-| STT | Thành viên      | Mã sinh viên | Vai trò            | Công việc được giao                                                     |
-|-----|-----------------|--------------|--------------------|-------------------------------------------------------------------------|
-| 1   | Nguyễn Năng Huy | K24DTCN201   | Backend Lead +     | 1. Hoàn thiện backend (HomeController, Repository, Entity)              |
-|     |                 |              | Database + DevOps  | 2. Xử lý lỗi transaction, xóa user thật + giữ lịch sử                   |
-|     |                 |              | Frontend Lead +    | 1. Thiết kế lại giao diện toàn bộ (trang chủ, lịch sử, admin dashboard) |
-|     |                 |              | UI/UX + Presenter  | 2. Responsive 100% (mobile + tablet + PC)                               |
-|     |                 |              |                    | 3. Thêm phân trang (pagination) cho lịch sử giao dịch                   |
-|     |                 |              | Business Analyst + | 1. Tối ưu database                                                      |
-|     |                 |              | Document + Tester  | 2. Viết test case + kịch bản test                                       |
-|     |                 |              |                    | 3. Viết báo cáo phần Kiến trúc hệ thống + Cơ sở dữ liệu + Triển khai    |
+| STT | Thành viên      | Mã sinh viên | Vai trò                              | Công việc được giao                                                     |
+|-----|-----------------|--------------|--------------------------------------|-------------------------------------------------------------------------|
+| 1   | Nguyễn Năng Huy | K24DTCN201   | Backend Lead + Database + DevOps     | 1. Hoàn thiện backend (HomeController, Repository, Entity)              |
+|     |                 |              |                                      | 2. Xử lý lỗi transaction, xóa user thật + giữ lịch sử                   |
+|     |                 |              | Frontend Lead + UI/UX + Presenter    | 1. Thiết kế lại giao diện toàn bộ (trang chủ, lịch sử, admin dashboard) |
+|     |                 |              |                                      | 2. Responsive 100% (mobile + tablet + PC)                               |
+|     |                 |              |                                      | 3. Thêm phân trang (pagination) cho lịch sử giao dịch                   |
+|     |                 |              | Business Analyst + Document + Tester | 1. Tối ưu database                                                      |
+|     |                 |              |                                      | 2. Viết test case + kịch bản test                                       |
+|     |                 |              |                                      | 3. Viết báo cáo phần Kiến trúc hệ thống + Cơ sở dữ liệu + Triển khai    |
   
 - Công nghệ & Framework sử dụng:
 
