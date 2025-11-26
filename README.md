@@ -1,7 +1,7 @@
 ## Hệ thống quản lý điểm thưởng - Nhóm 8
 
 ### Mô tả hệ thống:
-- Hệ thống quản lý điểm thưởng là một WebApp cho phép người dùng đăng ký, đăng nhập, nạp điểm, chuyển điểm cho nhau, xem lịch sử giao dịch; đồng thời cung cấp đầy đủ chức năng quản trị dành cho Admin (tạo tài khoản, nạp/trừ điểm, xem tổng quan hệ thống, xóa người dùng…).
+- Hệ thống quản lý điểm thưởng là một WebApp cho phép người dùng đăng ký, đăng nhập, nạp điểm, chuyển điểm cho nhau, xem lịch sử giao dịch; đồng thời cung cấp đầy đủ chức năng quản trị dành cho Admin (nạp điểm/trừ điểm, thêm người dùng, xóa người dùng, ghi lịch sử giao dịch).
 - Ngôn ngữ lập trình chính: Java
 - Công nghệ & Framework sử dụng:
 
