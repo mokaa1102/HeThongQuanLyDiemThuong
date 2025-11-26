@@ -2,7 +2,7 @@
 - Tên dự án: Hệ thống quản lý điểm thưởng
 - Phân công thành viên:
 | STT | Thành viên      | Mã sinh viên | Vai trò            | Công việc được giao                                                     |
-|-----------------------|--------------|--------------------|-------------------------------------------------------------------------|
+|-----|-----------------|--------------|--------------------|-------------------------------------------------------------------------|
 | 1   | Nguyễn Năng Huy | K24DTCN201   | Backend Lead +     | 1. Hoàn thiện backend (HomeController, Repository, Entity)              |
 |     |                 |              | Database + DevOps  | 2. Xử lý lỗi transaction, xóa user thật + giữ lịch sử                   |
 |     |                 |              | Frontend Lead +    | 1. Thiết kế lại giao diện toàn bộ (trang chủ, lịch sử, admin dashboard) |
