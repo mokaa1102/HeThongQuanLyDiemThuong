@@ -24,12 +24,12 @@
     - Chuyển điểm cho người dùng khác bằng tên đăng nhập
     - Xem lịch sử giao dịch chi tiết (nạp, chuyển, nhận, trừ)
 - Đối với quản trị viên (ADMIN):
-    - Dashboard tổng quan: tổng điểm đang lưu hành, tổng giao dịch, danh sách người dùng
+    - Dashboard tổng quan: tổng điểm, tổng giao dịch, danh sách người dùng
     - Tạo tài khoản người dùng mới
     - Nạp điểm trực tiếp cho bất kỳ người dùng nào (trang /nap-diem)
     - Trừ điểm người dùng (có xác nhận và ghi log)
     - Xóa tài khoản người dùng (không cho tự xóa chính mình)
-    - Xem số dư và thông tin tất cả người dùng dưới dạng bảng đẹp, có định dạng tiền tệ (1,000 điểm)
+    - Xem số dư và thông tin tất cả người dùng dưới dạng bảng, có định dạng tiền tệ (1,000 điểm)
 
 ### Công cụ phát triển & hỗ trợ:
 - IDE: IntelliJ IDEA Community, VSCode
