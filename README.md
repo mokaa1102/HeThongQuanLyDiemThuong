@@ -41,7 +41,7 @@
     - Xóa tài khoản người dùng (không cho tự xóa chính mình)
     - Xem số dư và thông tin tất cả người dùng dưới dạng bảng, có định dạng tiền tệ (1,000 điểm)
 
-### Công cụ phát triển & hỗ trợ:
+### 3. Công cụ phát triển & hỗ trợ:
 - IDE: IntelliJ IDEA Community, VSCode
 - Database client: MySQL Workbench, MySQL Shell for VSCode
 - Quản lý source code: Git & GitHub
@@ -49,7 +49,7 @@
 - Server: Spring Boot Embedded Tomcat (không cần cài Tomcat riêng)
 - OS: Ubuntu Server 24.04
 
-### Cấu trúc thư mục:
+### 4. Cấu trúc thư mục:
 ````
 HeThongQuanLyDiemThuong/
 ├── README.md
@@ -91,7 +91,8 @@ HeThongQuanLyDiemThuong/
                 ├── nap-diem.html
                 └── trang-chu.html
 ````
-## Cài đặt MariaDB:
+## 5. Cài đặt và chạy chương trình
+- Cài đặt MariaDB:
 ```bash
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
@@ -99,49 +100,44 @@ sudo systemctl start mariadb
 sudo systemctl status mariadb
 ```
 
-## Bảo mật máy chủ MariaDB bằng mật khẩu gốc, xóa người dùng ẩn danh và vô hiệu hóa quyền truy cập từ xa cho người dùng gốc
+- Bảo mật máy chủ MariaDB bằng mật khẩu gốc, xóa người dùng ẩn danh và vô hiệu hóa quyền truy cập từ xa cho người dùng gốc
 ```bash
 sudo mysql_secure_installation
 ```
 
-## Tạo Database:
+- Tạo Database:
 ```bash
 sudo mysql -u root -e "CREATE DATABASE diemthuong CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 ```
-
-### Tạo bảng và admin hệ thống:
-```bash
-sudo mysql -u root -p diemthuong < database_full_data.sql
-```
 - User/Passwd mặc định: admin / 123456
 
-## Cài đặt JDK 17
+- Cài đặt JDK 17
 ```bash
 sudo apt install openjdk-17-jdk -y
 java --version
 ```
 
-## Cài đặt Apache Maven:
+- Cài đặt Apache Maven:
 ```bash
 sudo apt install maven -y
 mvn -version
 ```
 
-## Chạy chương trình:
+- Chạy chương trình:
 ```bash
 cd HeThongQuanLyDiemThuong
 mvn clean spring-boot:run
 ```
 
-## (Optional) Cài đặt thêm `tree` để kiểm tra cấu trúc thư mục chương trình
+- (Optional) Cài đặt thêm `tree` để kiểm tra cấu trúc thư mục chương trình
 ```bash
 sudo apt install tree
 ```
 
-## Truy cập từ web:
-- http://ip_addr:8080
-## Lưu ý:
-- Chương trình chưa được tối ưu nên thường gặp tình trạng thoát chương trình (Ctrl + C) nhưng không giải phóng bộ nhớ RAM, xử lý tạm thời bằng câu lệnh:
+- Truy cập từ web:
+  - http://ip_addr:8080
+  - Lưu ý:
+  - Chương trình chưa được tối ưu nên thường gặp tình trạng thoát chương trình (Ctrl + C) nhưng không giải phóng bộ nhớ RAM, xử lý tạm thời bằng câu lệnh:
 ```bash
 pkill -f java
 ```
