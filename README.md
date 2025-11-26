@@ -136,8 +136,7 @@ sudo apt install tree
 
 - Truy cập từ web:
   - http://ip_addr:8080
-  - Lưu ý:
-  - Chương trình chưa được tối ưu nên thường gặp tình trạng thoát chương trình (Ctrl + C) nhưng không giải phóng bộ nhớ RAM, xử lý tạm thời bằng câu lệnh:
+  - Lưu ý: Chương trình chưa được tối ưu nên thường gặp tình trạng thoát chương trình (Ctrl + C) nhưng không giải phóng bộ nhớ RAM, xử lý tạm thời bằng câu lệnh:
 ```bash
 pkill -f java
 ```
