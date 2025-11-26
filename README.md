@@ -1,8 +1,17 @@
-## Hệ thống quản lý điểm thưởng - Nhóm 8
-
-### Mô tả hệ thống:
-- Hệ thống quản lý điểm thưởng là một WebApp cho phép người dùng đăng ký, đăng nhập, nạp điểm, chuyển điểm cho nhau, xem lịch sử giao dịch; đồng thời cung cấp đầy đủ chức năng quản trị dành cho Admin (nạp điểm/trừ điểm, thêm người dùng, xóa người dùng, ghi lịch sử giao dịch).
-- Ngôn ngữ lập trình chính: Java
+### 1. Thông tin chung dự án
+- Tên dự án: Hệ thống quản lý điểm thưởng
+- Phân công thành viên:
+| STT | Thành viên      | Mã sinh viên | Vai trò            | Công việc được giao                                                     |
+|-----------------------|--------------|--------------------|-------------------------------------------------------------------------|
+| 1   | Nguyễn Năng Huy | K24DTCN201   | Backend Lead +     | 1. Hoàn thiện backend (HomeController, Repository, Entity)              |
+|     |                 |              | Database + DevOps  | 2. Xử lý lỗi transaction, xóa user thật + giữ lịch sử                   |
+|     |                 |              | Frontend Lead +    | 1. Thiết kế lại giao diện toàn bộ (trang chủ, lịch sử, admin dashboard) |
+|     |                 |              | UI/UX + Presenter  | 2. Responsive 100% (mobile + tablet + PC)                               |
+|     |                 |              |                    | 3. Thêm phân trang (pagination) cho lịch sử giao dịch                   |
+|     |                 |              | Business Analyst + | 1. Tối ưu database                                                      |
+|     |                 |              | Document + Tester  | 2. Viết test case + kịch bản test                                       |
+|     |                 |              |                    | 3. Viết báo cáo phần Kiến trúc hệ thống + Cơ sở dữ liệu + Triển khai    |
+  
 - Công nghệ & Framework sử dụng:
 
 | Thành phần                      | Công nghệ sử dụng                          | Phiên bản |
@@ -16,7 +25,7 @@
 | Embedded                        | Spring Boot Embedded Tomcat                | -         |
 | Quản lý session                 | HttpSession (Session-based authentication) | -         |
 
-### Mô tả tính năng:
+### 2. Mô tả tính năng:
 - Đối với người dùng (USER):
     - Đăng nhập / Đăng xuất an toàn (mã hóa mật khẩu bằng BCrypt)
     - Xem số dư điểm hiện tại
