@@ -266,7 +266,7 @@ public class HomeController {
         log.setNguoiGui(admin);
         log.setLoai("TAO_TAI_KHOAN");
         log.setSoTien(0);
-        log.setMoTa("Tài khoản được tạo bởi Admin");
+        log.setMoTa("Tạo tài khoản: " + newUser.getTenDangNhap());
         log.setNguoiLienQuan("Admin: " + admin.getTenDangNhap());
         gdRepo.save(log);
 
@@ -362,7 +362,7 @@ public class HomeController {
         log.setNguoiGui(admin);
         log.setLoai("XOA_TAI_KHOAN");
         log.setSoTien(0);
-        log.setMoTa("Tài khoản bị xóa bởi Admin");
+        log.setMoTa("Tài khoản bị xóa: " + user.getTenDangNhap());
         log.setNguoiLienQuan(admin.getTenDangNhap());
         gdRepo.save(log);
 
