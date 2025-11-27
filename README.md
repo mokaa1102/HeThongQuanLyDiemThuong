@@ -28,7 +28,7 @@
 
 ### 2. Mô tả tính năng:
 - Đối với người dùng (USER):
-    - Đăng nhập / Đăng xuất an toàn (mã hóa mật khẩu bằng BCrypt)
+    - Đăng nhập / Đăng xuất với mật khẩu
     - Xem số dư điểm hiện tại
     - Nạp điểm (giả lập thanh toán)
     - Chuyển điểm cho người dùng khác bằng tên đăng nhập
