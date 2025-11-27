@@ -2,29 +2,29 @@
 - Tên dự án: Hệ thống quản lý điểm thưởng
 - Phân công thành viên:
 
-| STT | Thành viên      | Mã sinh viên | Vai trò                              | Công việc được giao                                                     |
-|-----|-----------------|--------------|--------------------------------------|-------------------------------------------------------------------------|
-| 1   | Nguyễn Năng Huy | K24DTCN201   | Backend Lead + Database + DevOps     | 1. Hoàn thiện backend (HomeController, Repository, Entity)              |
-|     |                 |              |                                      | 2. Xử lý lỗi transaction, xóa user thật + giữ lịch sử                   |
-| 2   |                 |              | Frontend Lead + UI/UX + Presenter    | 1. Thiết kế lại giao diện toàn bộ (trang chủ, lịch sử, admin dashboard) |
-|     |                 |              |                                      | 2. Responsive 100% (mobile + tablet + PC)                               |
-|     |                 |              |                                      | 3. Thêm phân trang (pagination) cho lịch sử giao dịch                   |
-| 3   |                 |              | Business Analyst + Document + Tester | 1. Tối ưu database                                                      |
-|     |                 |              |                                      | 2. Viết test case + kịch bản test                                       |
-|     |                 |              |                                      | 3. Viết báo cáo phần Kiến trúc hệ thống + Cơ sở dữ liệu + Triển khai    |
+  | STT | Thành viên      | Mã sinh viên | Vai trò                              | Công việc được giao                                                     |
+  |-----|-----------------|--------------|--------------------------------------|-------------------------------------------------------------------------|
+  | 1   | Nguyễn Năng Huy | K24DTCN201   | Backend Lead + Database + DevOps     | 1. Hoàn thiện backend (HomeController, Repository, Entity)              |
+  |     |                 |              |                                      | 2. Xử lý lỗi transaction, xóa user thật + giữ lịch sử                   |
+  | 2   |                 |              | Frontend Lead + UI/UX + Presenter    | 1. Thiết kế lại giao diện toàn bộ (trang chủ, lịch sử, admin dashboard) |
+  |     |                 |              |                                      | 2. Responsive 100% (mobile + tablet + PC)                               |
+  |     |                 |              |                                      | 3. Thêm phân trang (pagination) cho lịch sử giao dịch                   |
+  | 3   |                 |              | Business Analyst + Document + Tester | 1. Tối ưu database                                                      |
+  |     |                 |              |                                      | 2. Viết test case + kịch bản test                                       |
+  |     |                 |              |                                      | 3. Viết báo cáo phần Kiến trúc hệ thống + Cơ sở dữ liệu + Triển khai    |
   
 - Công nghệ & Framework sử dụng:
 
-| Thành phần                      | Công nghệ sử dụng                          | Phiên bản |
-|---------------------------------|--------------------------------------------|-----------|
-| Back-end                        | Spring Boot 3.x                            | 3.2.x+    |
-| Web MVC & Template Engine       | Spring MVC + Thymeleaf                     | -         |
-| Cơ sở dữ liệu                   | MariaDB                                    | 10.11.13  |
-| Object-Relational Mapping (ORM) | Spring Data JPA (Hibernate)                | -         |
-| Front-end                       | HTML5, CSS3, Bootstrap 5                   | 5.3+      |
-| Build & Dependencies            | Maven                                      | 3.8.7     |
-| Embedded                        | Spring Boot Embedded Tomcat                | -         |
-| Quản lý session                 | HttpSession (Session-based authentication) | -         |
+  | Thành phần                      | Công nghệ sử dụng                          | Phiên bản |
+  |---------------------------------|--------------------------------------------|-----------|
+  | Back-end                        | Spring Boot 3.x                            | 3.2.x+    |
+  | Web MVC & Template Engine       | Spring MVC + Thymeleaf                     | -         |
+  | Cơ sở dữ liệu                   | MariaDB                                    | 10.11.13  |
+  | Object-Relational Mapping (ORM) | Spring Data JPA (Hibernate)                | -         |
+  | Front-end                       | HTML5, CSS3, Bootstrap 5                   | 5.3+      |
+  | Build & Dependencies            | Maven                                      | 3.8.7     |
+  | Embedded                        | Spring Boot Embedded Tomcat                | -         |
+  | Quản lý session                 | HttpSession (Session-based authentication) | -         |
 
 ### 2. Mô tả tính năng:
 - Đối với người dùng (USER):
@@ -93,50 +93,50 @@ HeThongQuanLyDiemThuong/
 ````
 ## 5. Cài đặt và chạy chương trình
 - Cài đặt MariaDB:
-```bash
-sudo apt install mariadb-server mariadb-client -y
-sudo systemctl enable mariadb
-sudo systemctl start mariadb
-sudo systemctl status mariadb
-```
+  ```bash
+  sudo apt install mariadb-server mariadb-client -y
+  sudo systemctl enable mariadb
+  sudo systemctl start mariadb
+  sudo systemctl status mariadb
+  ```
 
 - Bảo mật máy chủ MariaDB bằng mật khẩu gốc, xóa người dùng ẩn danh và vô hiệu hóa quyền truy cập từ xa cho người dùng gốc
-```bash
-sudo mysql_secure_installation
-```
+  ```bash
+  sudo mysql_secure_installation
+  ```
 
 - Tạo Database:
-```bash
-sudo mysql -u root -e "CREATE DATABASE diemthuong CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
-```
+  ```bash
+  sudo mysql -u root -e "CREATE DATABASE diemthuong CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+  ```
 - User/Passwd mặc định: admin / 123456
 
 - Cài đặt JDK 17
-```bash
-sudo apt install openjdk-17-jdk -y
-java --version
-```
+  ```bash
+  sudo apt install openjdk-17-jdk -y
+  java --version
+  ```
 
 - Cài đặt Apache Maven:
-```bash
-sudo apt install maven -y
-mvn -version
-```
+  ```bash
+  sudo apt install maven -y
+  mvn -version
+  ```
 
 - Chạy chương trình:
-```bash
-cd HeThongQuanLyDiemThuong
-mvn clean spring-boot:run
-```
+  ```bash
+  cd HeThongQuanLyDiemThuong
+  mvn clean spring-boot:run
+  ```
 
 - (Optional) Cài đặt thêm `tree` để kiểm tra cấu trúc thư mục chương trình
-```bash
-sudo apt install tree
-```
+  ```bash
+  sudo apt install tree
+  ```
 
 - Truy cập từ web:
   - http://ip_addr:8080
   - Lưu ý: Chương trình chưa được tối ưu nên thường gặp tình trạng thoát chương trình (Ctrl + C) nhưng không giải phóng bộ nhớ RAM, xử lý tạm thời bằng câu lệnh:
-```bash
-pkill -f java
-```
+    ```bash
+    pkill -f java
+    ```
