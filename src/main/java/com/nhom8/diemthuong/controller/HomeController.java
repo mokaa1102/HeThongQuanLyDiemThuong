@@ -43,18 +43,6 @@ public class HomeController {
         }
     }
 
-    @PostConstruct
-    public void initDeletedUser() {
-        if (ndRepo.findByTenDangNhap("[DA_XOA]").isEmpty()) {
-            NguoiDung deleted = new NguoiDung();
-            deleted.setTenDangNhap("[DA_XOA]");
-            deleted.setMatKhau("not_used");
-            deleted.setHoTen("Tài khoản đã bị xóa");
-            deleted.setVaiTro("USER");
-            ndRepo.save(deleted);
-        }
-    }
-
     @GetMapping({"/", "/dang-nhap"})
     public String dangNhap() { return "dang-nhap"; }
 
