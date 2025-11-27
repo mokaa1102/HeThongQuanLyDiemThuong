@@ -358,7 +358,7 @@ public class HomeController {
         }
 
         GiaoDich log = new GiaoDich();
-        log.setNguoiDung(user);
+        log.setNguoiDung(admin);
         log.setNguoiGui(admin);
         log.setLoai("XOA_TAI_KHOAN");
         log.setSoTien(0);
