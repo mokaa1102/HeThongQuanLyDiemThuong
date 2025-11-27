@@ -110,11 +110,13 @@ public class HomeController {
         viRepo.save(vi);
 
         GiaoDich gd = new GiaoDich();
+        gd.setNguoiDung(admin);
         gd.setNguoiGui(admin);
         gd.setNguoiNhan(user);
         gd.setLoai("ADMIN_NAP");
         gd.setSoTien(soDiem);
         gd.setMoTa(moTa != null && !moTa.isBlank() ? moTa : "Admin nạp điểm");
+        gd.setNguoiLienQuan(user.getTenDangNhap());
         gdRepo.save(gd);
 
         ra.addFlashAttribute("success","Nạp thành công " + soDiem + " điểm cho tài khoản: " + tenDangNhap);
